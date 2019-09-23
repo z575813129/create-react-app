@@ -2,7 +2,7 @@
   "name": "webpack-4-demo",
   "version": "1.0.0",
   "description": "",
-  "private": true,
+  "private": false,
   "repository": {
     "type": "git",
     "url": "https://github.com/z575813129/create-react-app.git"

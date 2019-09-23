@@ -1,10 +1,9 @@
 const path = require('path')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-
 module.exports = {
     entry: {
-        app: './src/main.js',
+        app: path.resolve(__dirname,'../src/main.js'),
     },
     plugins: [
         new CleanWebpackPlugin(),
@@ -46,8 +45,8 @@ module.exports = {
                 loader: 'url-loader',
                 exclude: /fonts?/,
                 options: {
-                    limit: 4096,                                
-                    name: 'images/[name].[hash:7].[ext]'                        
+                    limit: 4096,
+                    name: 'images/[name].[hash:7].[ext]'
                 }
             },
             {

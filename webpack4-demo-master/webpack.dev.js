@@ -12,7 +12,7 @@ module.exports = merge(common, {
         hot: true,
         hotOnly: true,
         open: false,  //自动打开浏览器
-        port: 9000,
+        port: 8000,
         overlay: {
             warnings: false,
             errors: true

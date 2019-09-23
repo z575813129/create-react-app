@@ -2,7 +2,7 @@ const path = require('path')
 const merge = require('webpack-merge')
 const common = require('./webpack.common.js')
 const webpack = require('webpack')
-const theme = require('./src/theme')
+const theme = require('../src/theme')
 
 module.exports = merge(common, {
     mode: 'development',

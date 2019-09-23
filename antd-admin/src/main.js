@@ -10,7 +10,7 @@ const App = () => {
 
     return(
         <HashRouter basename="/">
-            <Layout 
+            <Layout
                 selectedKeys={selectedKeys}
                 onChangeSelectKey={(keys) => setSelectedKeys(keys)}
             >

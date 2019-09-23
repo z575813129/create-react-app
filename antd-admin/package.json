@@ -2,17 +2,16 @@
   "name": "webpack-4-demo",
   "version": "1.0.0",
   "description": "",
-  "private": true,
+  "private": false,
   "repository": {
     "type": "git",
     "url": "https://github.com/z575813129/create-react-app.git"
   },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --config webpack.dev.js",
-    "dev": "webpack-dev-server --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "start": "webpack-dev-server --config config/webpack.dev.js",
+    "build": "webpack --config config/webpack.prod.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
