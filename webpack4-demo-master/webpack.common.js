@@ -29,8 +29,8 @@ module.exports = {
             {
                 test: /\.js$/,
                 use: 'babel-loader',
-                exclude: path.resolve(__dirname, 'node_modules'),
-                include:path.resolve(__dirname, 'src')
+                exclude: path.resolve(__dirname, './node_modules'),
+                include:path.resolve(__dirname, './src')
             },
             {
                 test: /\.(woff2?|eot|ttf|otf|svg)(\?.*)?$/,

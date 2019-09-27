@@ -1,19 +1,19 @@
 {
-  "name": "webpack-4-demo",
+  "name": "react",
   "version": "1.0.0",
-  "description": "",
+  "description": "webpack",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/z575813129/create-react-app.git"
+    "url": "git+https://github.com/z575813129/create-react-app.git"
   },
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config config/webpack.dev.js",
-    "build": "webpack --config config/webpack.prod.js",
+    "start": "webpack-dev-server",
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Anyway",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -65,5 +65,12 @@
   "dependencies": {
     "antd": "^3.20.0"
   },
-  "theme": "./src/theme.js"
+  "theme": "./src/theme.js",
+  "bugs": {
+    "url": "https://github.com/z575813129/create-react-app/issues"
+  },
+  "homepage": "https://github.com/z575813129/create-react-app#readme",
+  "keywords": [
+    "react"
+  ]
 }
