@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-export default class Cart extends Component {
+export default class CartSample extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -29,6 +29,44 @@ export default class Cart extends Component {
         })
     }
 
+    // 加购物车
+    addToCart = (good) => {
+        console.log(good)
+        // 创建新购物车
+        const newCart = [...this.state.cart];
+        const idx = newCart.findIndex(c => c.id === good.id)
+        const item = newCart[idx]
+        console.log('idx', idx)
+        if (idx > -1) {
+            // 删除老的 生成新的
+            newCart.splice(idx, 1, {...item, count: item.count + 1});
+        } else {
+            newCart.push({...good, count: 1})
+        }
+        // 更新
+        this.setState({cart: newCart})
+    }
+
+    add = (good) => {
+        // 创建新购物车
+        const newCart = [...this.state.cart];
+        const idx = newCart.findIndex(c => c.id === good.id)
+        const item = newCart[idx]
+        newCart.splice(idx, 1, {...item, count: item.count + 1});
+        // 更新
+        this.setState({cart: newCart})
+    }
+
+    minus = (good) => {
+        // 创建新购物车
+        const newCart = [...this.state.cart];
+        const idx = newCart.findIndex(c => c.id === good.id)
+        const item = newCart[idx]
+        newCart.splice(idx, 1, {...item, count: item.count - 1});
+        // 更新
+        this.setState({cart: newCart})
+    }
+
     render() {
         // const title = this.props.title ? <h1>this.props.title</h1> : null
         return (
@@ -41,12 +79,38 @@ export default class Cart extends Component {
                 </div>
 
                 <ul>
-                    {this.state.goods.map(good => <li key={good.id}>{good.text}</li>)}
+                    {this.state.goods.map(good => <li key={good.id}>
+                        <button onClick={() => this.addToCart(good)}>加购</button>
+                        {good.text}
+                    </li>)}
                 </ul>
 
-                <Cart data={this.state.cart}></Cart>
+                <Cart data={this.state.cart} minus={this.minus} add={this.add}></Cart>
 
             </div>
         )
     }
+}
+
+function Cart({data, minus, add}) {
+    return (
+        <div>
+            <table>
+                <tbody>
+                {data.map(d => (
+                    <tr key={d.id}>
+                        <td>{d.text}</td>
+                        <td>
+                            <button onClick={() => minus(d)}>-</button>
+                            {d.count}
+                            <button onClick={() => add(d)}>+</button>
+                        </td>
+                        <td>{d.price * d.count}</td>
+                    </tr>
+                ))}
+                </tbody>
+            </table>
+        </div>
+    )
+
 }

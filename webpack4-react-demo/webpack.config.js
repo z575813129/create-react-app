@@ -107,7 +107,7 @@ module.exports = {
         // 别名
         // alias: {
         //     pages: path.join(__dirname, 'src/pages'),
-        //     component: path.join(__dirname, 'src/component'),
+        //     components: path.join(__dirname, 'src/components'),
         //     actions: path.join(__dirname, 'src/redux/actions'),
         //     reducers: path.join(__dirname, 'src/redux/reducers'),
         // },
