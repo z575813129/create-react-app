@@ -6,7 +6,7 @@ import { connect } from 'react-redux'
 // import Socket from '@configs/socket'
 
 @connect(store => ({
-  // socketCollection: store.socketCollection,
+  // socketCollection: index.socketCollection,
 }))
 
 export default class app extends Component {

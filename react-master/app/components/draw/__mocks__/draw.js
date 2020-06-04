@@ -10,11 +10,11 @@ import ReactDOM from 'react-dom'
 // import { Provider } from 'react-redux'
 import PropTypes from 'prop-types';
 // import { Form } from 'antd'
-// import configure from '../../store/configureStore'
+// import configure from '../../index/configureStore'
 
 import './draw.less'
 
-// const store = configure({ config: global.$GLOBALCONFIG })
+// const index = configure({ config: global.$GLOBALCONFIG })
 // @Form.create({})
 
 // 声明组件  并对外输出

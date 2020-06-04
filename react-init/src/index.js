@@ -3,7 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
-
+// import index from "./index";
+// redux需要订阅,当状态跟新时,再次渲染
+// index.subscribe(() => {
+//     ReactDOM.render(
+//         <App/>,
+//         document.getElementById('root')
+//     );
+// })
 ReactDOM.render(
     <App/>,
     document.getElementById('root')

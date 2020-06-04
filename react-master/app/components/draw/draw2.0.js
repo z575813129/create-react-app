@@ -9,11 +9,11 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types';
-// import configure from '../../store/configureStore'
+// import configure from '../../index/configureStore'
 
 import './draw.less'
 
-// const store = configure({ config: global.$GLOBALCONFIG })
+// const index = configure({ config: global.$GLOBALCONFIG })
 
 // 声明组件  并对外输出
 export default class Drawer extends Component {

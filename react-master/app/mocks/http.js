@@ -10,7 +10,7 @@ http.createServer((req, res) => {
     'Access-Control-Allow-Methods': '*',
     'Access-Control-Allow-Headers': '*',
     'Access-Control-Allow-Credentials': true,
-    'Cache-Control': 'no-cache,no-store', // clear cache
+    'Cache-Control': 'no-cache,no-index', // clear cache
   })
   if (req.method === 'OPTIONS') {
     res.end(null)
