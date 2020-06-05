@@ -1,5 +1,5 @@
 import axios from "axios";
-import router from "umi/router";
+import {history} from 'umi';
 
 const userinfo = JSON.parse(localStorage.getItem("userinfo")) || {
   token: "",
@@ -27,7 +27,7 @@ export default {
           // 登录成功: 缓存用户信息
           localStorage.setItem("userinfo", JSON.stringify(userinfo));
           yield put({ type: "init", payload: userinfo });
-          router.push("/");
+          history.push("/");
         } else {
           // 登录失败：弹出提示信息，可以通过响应拦截器实现
         }
@@ -36,7 +36,7 @@ export default {
     // *logout({ payload }, { call, put }) {
     //   localStorage.removeItem("userinfo");
     //   yield put({ type: "clear" });
-    //   router.push("/login");
+    //   history.push("/login");
     // }
   },
   reducers: {

@@ -1,5 +1,5 @@
 import { Layout, Menu } from "antd";
-import Link from "umi/link";
+import {Link} from 'umi';
 import styles from "./index.css";
 import React, { Component } from "react";
 import { Icon, Badge, Dropdown } from "antd";

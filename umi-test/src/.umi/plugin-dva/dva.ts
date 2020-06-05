@@ -3,7 +3,7 @@ import { Component } from 'react';
 import { ApplyPluginsType } from 'umi';
 import dva from 'dva';
 // @ts-ignore
-import createLoading from 'D:/coding/github/create-react-app/umi-test/node_modules/@umijs/plugin-dva/node_modules/dva-loading/dist/index.esm.js';
+import createLoading from 'D:/coding/github/create-react-app/umi-test/node_modules/dva-loading/dist/index.esm.js';
 import { plugin, history } from '../core/umiExports';
 
 let app:any = null;
