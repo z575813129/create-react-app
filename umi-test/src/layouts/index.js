@@ -33,7 +33,7 @@ export default class extends Component {
         <Header className={styles.header}>
           <img
             className={styles.logo}
-            src="https://img.kaikeba.com/logo-new.png"
+            src="https://cn.bing.com/sa/simg/hpc27.png"
           />
           <Menu
             theme="dark"

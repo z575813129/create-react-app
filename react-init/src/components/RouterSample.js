@@ -70,7 +70,7 @@ const PrivateRoute = connect(state => ({isLogin: state.user.isLogin}))(
 //     )
 // }
 
-//登录组件
+// {/*登录组件*/}
 const Login = connect(state => ({isLogin: state.user.isLogin, loading: state.user.isLogin}, {login: login}))
 (({location, isLogin, login, loading}) => {
     const redirect = location.state.redirect || '/'
@@ -117,8 +117,8 @@ export default function RouterSample() {
                     <Route exact path='/' component={Home}></Route>
                     <PrivateRoute path='/about' component={About}></PrivateRoute>
                     <Route path='/login' component={Login}></Route>
-                    <Route path='/detail/:course' component={Detail}> </Route>
-                    // 404没有path, 必然匹配
+                    <Route path='/detail/:course' component={Detail}></Route>
+                    {/*404没有path, 必然匹配*/}
                     <Route component={NoMatch}></Route>
                 </Switch>
             </div>

@@ -5,7 +5,7 @@ const userService = {
         return new Promise((resolve, reject) => {
             setTimeout(() => {
                 if (uname === 'Jerry') {
-                    resolve({id: 1, name: 'Jerry', age; 20})
+                    resolve({id: 1, name: 'Jerry', age: 20})
                 } else {
                     reject('用户名或密码错误')
                 }
