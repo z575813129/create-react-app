@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import OrderItem from '../OrderItem'
+import {Button} from 'antd';
 
 const data = [
     {
@@ -45,14 +46,17 @@ class OrderList extends Component {
 
     render() {
         return (
-          <div>
-              {
-                  this.state.data.map(item => {
-                      return (<OrderItem data={item} key={item.id}/>
-                      )
-                  })
-              }
-          </div>
+            <div>
+                <Button type="primary">Primary Button</Button>
+                <Button>Default Button</Button>
+                <Button type="dashed">Dashed Button</Button>
+                {
+                    this.state.data.map(item => {
+                        return (<OrderItem data={item} key={item.id}/>
+                        )
+                    })
+                }
+            </div>
         )
     }
 }
