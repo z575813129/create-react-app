@@ -30,7 +30,7 @@ export default ReduxTest
 //     add: () => ({type: "add"}),
 //     minus: () => ({type: "minus"})
 // }
-//
+
 // function ReduxTest({num, add, minus}) {
 //     return <div>
 //         <p>{num}</p>
@@ -42,7 +42,6 @@ export default ReduxTest
 // }
 //
 // export default connect(mapStateToProps, mapDispatchToProps)(ReduxTest)
-
 
 // import index from '../index'
 // export default function TeduxTest() {

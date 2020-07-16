@@ -21,7 +21,7 @@ const routes = [
         "path": "/about",
         "component": require('D:/coding/github/create-react-app/umi-test/src/pages/about').default,
         "Routes": [
-          "./routes/PrivateRoute.js"
+          "./router/PrivateRoute.js"
         ],
         "exact": true
       },
@@ -49,7 +49,7 @@ const routes = [
   }
 ];
 
-// allow user to extend routes
+// allow user to extend router
 plugin.applyPlugins({
   key: 'patchRoutes',
   type: ApplyPluginsType.event,

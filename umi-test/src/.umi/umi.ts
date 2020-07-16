@@ -39,7 +39,7 @@ export default clientRender();
 // @ts-ignore
 if (module.hot) {
   // @ts-ignore
-  module.hot.accept('./core/routes', () => {
+  module.hot.accept('./core/router', () => {
     getClientRender({ hot: true })();
   });
 }

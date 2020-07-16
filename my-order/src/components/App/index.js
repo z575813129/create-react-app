@@ -1,11 +1,17 @@
-import React, {Component} from 'react'
+import React from 'react';
+// import {Provider} from 'react-redux'
+import Main from '../Home'
+// import store from "../store";
 
-class Header extends Component {
-    render() {
-        return (
-          <div>Header</div>
-        )
-    }
+function App() {
+    return (
+        <div className="App">
+            <Main></Main>
+            {/*<Provider store={store}>*/}
+            {/*    /!*<ReduxTest></ReduxTest>*!/*/}
+            {/*</Provider>*/}
+        </div>
+    )
 }
 
-export default Header
+export default App;

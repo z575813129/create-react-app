@@ -21,7 +21,7 @@ export default {
                 {
                     path: "/about",
                     component: "./about",
-                    Routes: ["./routes/PrivateRoute.js"]
+                    Routes: ["./router/PrivateRoute.js"]
                 },
                 {
                     path: "/users",
