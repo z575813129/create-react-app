@@ -5,7 +5,8 @@ import React, {useContext} from 'react'
 const MyContext = React.createContext()
 const {Provider, Consumer} = MyContext
 
-let color={color:'red'}
+let color = {color: 'red'}
+
 function Child(prop) {
     return <div style={color}>Child: {prop.foo}</div>
 }
