@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import {Layout, Menu, Breadcrumb, Button} from 'antd';
 import {Link, Route, NavLink} from 'react-router-dom'
 import OrderList from "@/components/OrderList";
@@ -11,32 +11,35 @@ import {
 const {Header, Content, Footer, Sider} = Layout;
 const {SubMenu} = Menu;
 
-function Home () {
-
-    let menu = [
-                {id: 1, title: '基础数据', icon: 'PieChartOutlined', url: '', 'sub': null},
-                {
-                    id: 2, title: '生产执行', icon: 'PieChartOutlined', url: '', 'sub': [
-                        {id: 21, title: '生产订单', icon: 'PieChartOutlined', url: ''},
-                        {id: 22, title: '生产计划', icon: 'PieChartOutlined', url: ''},
-                        {id: 23, title: '下线报工', icon: 'PieChartOutlined', url: ''}
-                    ]
-                },
-                {id: 3, title: '质量管理', icon: 'PieChartOutlined', url: '', 'sub': null},
-                {id: 4, title: '设备管理', icon: 'PieChartOutlined', url: '', 'sub': null},
-                {
-                    id: 5, title: '物流管理', icon: 'PieChartOutlined', url: '', 'sub': [
-                        {id: 51, title: '线边仓管理', icon: 'PieChartOutlined', url: ''},
-                        {id: 52, title: '物流拉动', icon: 'PieChartOutlined', url: ''},
-                        {id: 53, title: '物料管理', icon: 'PieChartOutlined', url: ''}
-                    ]
-                }
-            ]
-    let [collapsed, defaultSelectedKeys] = [false, ['22']]
-     const [count, setCount, menu: menu] = useState(0);
-    onCollapse () {
-       return  this.setState({collapsed});
+export default class Index extends React.Component {
+    state = {
+        collapsed: false,
+        defaultSelectedKeys: ['22'],
+        menu: [
+            {id: 1, title: '基础数据', icon: 'PieChartOutlined', url: '', 'sub': null},
+            {
+                id: 2, title: '生产执行', icon: 'PieChartOutlined', url: '', 'sub': [
+                    {id: 21, title: '生产订单', icon: 'PieChartOutlined', url: ''},
+                    {id: 22, title: '生产计划', icon: 'PieChartOutlined', url: ''},
+                    {id: 23, title: '下线报工', icon: 'PieChartOutlined', url: ''}
+                ]
+            },
+            {id: 3, title: '质量管理', icon: 'PieChartOutlined', url: '', 'sub': null},
+            {id: 4, title: '设备管理', icon: 'PieChartOutlined', url: '', 'sub': null},
+            {
+                id: 5, title: '物流管理', icon: 'PieChartOutlined', url: '', 'sub': [
+                    {id: 51, title: '线边仓管理', icon: 'PieChartOutlined', url: ''},
+                    {id: 52, title: '物流拉动', icon: 'PieChartOutlined', url: ''},
+                    {id: 53, title: '物料管理', icon: 'PieChartOutlined', url: ''}
+                ]
+            }
+        ]
     }
+    onCollapse = collapsed => {
+        this.setState({collapsed});
+    }
+
+    render() {
         return (
             <Layout style={{minHeight: '100vh'}}>
                 <Sider collapsible collapsed={this.state.collapsed} onCollapse={this.onCollapse}>
@@ -71,4 +74,5 @@ function Home () {
                 </Layout>
             </Layout>
         )
+    }
 }
