@@ -1,5 +1,6 @@
 import React from 'react'
 import {Layout, Menu, Breadcrumb} from 'antd';
+import OrderList from "../OrderList";
 import './style.css'
 import {
     DesktopOutlined,
@@ -65,7 +66,8 @@ export default class Index extends React.Component {
                         </Breadcrumb>
 
                         <div className="site-layout-background" style={{padding: 24, minHeight: 360}}>
-                            Bill is a cat.
+                            {/*Bill is a cat.*/}
+                            <OrderList></OrderList>
                         </div>
                     </Content>
                     <Footer style={{textAlign: 'center'}}>Ant Design ©2018 Created by Ant UED</Footer>
