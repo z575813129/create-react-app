@@ -1,29 +1,43 @@
 import React, {Component} from 'react'
 import OrderItem from '../OrderItem'
-import {Button} from 'antd';
+import {Col, Row} from 'antd'
 
 const data = [
     {
         id: 1,
-        shop: '创意菜',
-        product: '百香果',
+        img: 'https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png',
+        name: 'Lydia',
         price: 19.9
 
     },
     {
         id: 2,
-        shop: '创意菜',
-        product: '百香果',
-        price: 29.9
+        img: 'https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png',
+        name: 'Lydia',
+        price: 19.9
 
     },
     {
         id: 3,
-        shop: '创意菜',
-        product: '百香果',
-        price: 39.9
+        img: 'https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png',
+        name: 'Lydia',
+        price: 19.9
 
-    }
+    },
+    {
+        id: 4,
+        img: 'https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png',
+        name: 'Lydia',
+        price: 19.9
+
+    },
+    {
+        id: 5,
+        img: 'https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png',
+        name: 'Lydia',
+        price: 19.9
+
+    },
 ]
 
 
@@ -47,15 +61,18 @@ class OrderList extends Component {
     render() {
         return (
             <div>
-                <Button type="primary">Primary Button</Button>
-                <Button>Default Button</Button>
-                <Button type="dashed">Dashed Button</Button>
-                {
-                    this.state.data.map(item => {
-                        return (<OrderItem data={item} key={item.id}/>
-                        )
-                    })
-                }
+                <Row gutter={16}>
+                    {
+                        this.state.data.map(item => {
+                            return (
+                                <Col span={6} key={item.id}>
+                                    <OrderItem style={{marginBottom: '20px'}}  data={item} />
+                                </Col>
+
+                            )
+                        })
+                    }
+                </Row>
             </div>
         )
     }

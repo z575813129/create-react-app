@@ -1,12 +1,12 @@
 import React from 'react';
 // import {Provider} from 'react-redux'
-import Main from '../Home'
+import Home from '../Home'
 // import store from "../store";
 
 function App() {
     return (
         <div className="App">
-            <Main></Main>
+            <Home></Home>
             {/*<Provider store={store}>*/}
             {/*    /!*<ReduxTest></ReduxTest>*!/*/}
             {/*</Provider>*/}

@@ -49,7 +49,7 @@ const routes = [
   }
 ];
 
-// allow user to extend router
+// allow user to extend routes
 plugin.applyPlugins({
   key: 'patchRoutes',
   type: ApplyPluginsType.event,

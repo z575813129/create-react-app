@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './app.css';  // Antd的默认样式
-import getRouter from './router'
+import getRoute from './router'
 
 ReactDOM.render(
-    getRouter(),
+    getRoute(),
     document.getElementById('root')
 );

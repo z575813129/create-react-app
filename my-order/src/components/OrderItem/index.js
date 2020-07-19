@@ -1,14 +1,19 @@
 import React, {Component} from 'react'
+import {Card} from 'antd';
+
+const {Meta} = Card;
 
 class OrderItem extends Component {
     render() {
-        const {shop, product,price} = this.props.data
+        const {shop, product, price} = this.props.data
         return (
-          <div>
-              <span>{shop}</span>
-              <span>{product}</span>
-              <span>{price}</span>
-          </div>
+            <Card
+                hoverable
+                style={{width: 240}}
+                cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"/>}
+            >
+                <Meta title="Europe Street beat" description="www.instagram.com"/>
+            </Card>
         )
     }
 }

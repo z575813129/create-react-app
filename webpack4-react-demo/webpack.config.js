@@ -11,7 +11,7 @@ module.exports = {
     mode: 'development',      // 模式配置
     devtool: 'inline-source-map',
     stats: {children: false},
-    entry: './src/index.js',               // 入口文件
+    entry: './src/index2.js',               // 入口文件
     output: { // 出口文件
         filename: 'bundle.js',
         path: path.resolve('dist')

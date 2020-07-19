@@ -25,7 +25,7 @@ const webpackConfigProd = {
     }),
     // 将打包后的资源注入到html文件内    
     new HtmlWebpackPlugin({
-      // inject: true, // will inject the Home bundle to index.html
+      // inject: true, // will inject the Index bundle to index.html
       template: resolve('../app/index.html'),
       // mapConfig:'http://192.168.0.1/map_config.js',
       // 这里列出要加入html中的js文件

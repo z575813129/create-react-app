@@ -1,7 +1,7 @@
 import React from 'react'
 
 import {BrowserRouter, Route, Switch, Link} from 'react-router-dom'
-import Main from '../Home/Home'
+import Main from '../Index/Index'
 
 const getRouter = () => (
     <Router>
@@ -11,8 +11,8 @@ const getRouter = () => (
                 <li><Link to="/page1">Page1</Link></li>
             </ul>
             <Switch>
-                <Route exact path="/" component={Home}/>
-                <Route path="/page1" component={Page1}/>
+                <Route exact path="/" component={Index}/>
+                <Route path="/page1" component={Index}/>
             </Switch>
         </div>
     </Router>

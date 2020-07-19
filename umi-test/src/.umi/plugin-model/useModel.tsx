@@ -1,7 +1,7 @@
 // @ts-nocheck
 import { useState, useEffect, useContext, useRef } from 'react';
 // @ts-ignore
-import isEqual from 'D:/coding/github/create-react-app/umi-test/node_modules/fast-deep-equal/index.js';
+import isEqual from 'D:/coding/github/create-react-app/umi-test/node_modules/fast-deep-equal/index2.js';
 // @ts-ignore
 import { UmiContext } from 'D:/coding/github/create-react-app/umi-test/node_modules/@umijs/plugin-model/lib/helpers/constant';
 import { Model, models } from './Provider';

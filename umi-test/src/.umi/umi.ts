@@ -5,7 +5,7 @@ import '../global.js';
 import { plugin } from './core/plugin';
 import { createHistory } from './core/history';
 import { ApplyPluginsType } from 'D:/coding/github/create-react-app/umi-test/node_modules/@umijs/runtime';
-import { renderClient } from 'D:/coding/github/create-react-app/umi-test/node_modules/@umijs/renderer-react/dist/index.js';
+import { renderClient } from 'D:/coding/github/create-react-app/umi-test/node_modules/@umijs/renderer-react/dist/index2.js';
 
 
 require('../global.less');
@@ -39,7 +39,7 @@ export default clientRender();
 // @ts-ignore
 if (module.hot) {
   // @ts-ignore
-  module.hot.accept('./core/router', () => {
+  module.hot.accept('./core/routes', () => {
     getClientRender({ hot: true })();
   });
 }
