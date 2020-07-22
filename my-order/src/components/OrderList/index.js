@@ -8,7 +8,6 @@ const data = [
         img: 'https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png',
         name: 'Lydia',
         price: 19.9
-
     },
     {
         id: 2,
@@ -44,7 +43,7 @@ const data = [
 class OrderList extends Component {
     constructor(props) {
         super(props)
-        this.state = {data: data}
+        this.state = {cart: data}
     }
 
     componentDidMount() {
@@ -58,17 +57,28 @@ class OrderList extends Component {
         // })
     }
 
+    add(item) {
+        this.setState({cart: [...this.state.cart, item]})
+    }
+
+    minus(item) {
+        let  arr = this.state.cart
+        this.setState({cart: arr.shift()})
+    }
+
     render() {
         return (
             <div>
                 <Row gutter={16}>
                     {
-                        this.state.data.map(item => {
+                        this.state.cart.map(item => {
                             return (
                                 <Col span={6} key={item.id}>
-                                    <OrderItem style={{marginBottom: '20px'}}  data={item} />
+                                    <OrderItem style={{marginBottom: '20px'}}
+                                               minus={() => this.minus(item)}
+                                               add={() => this.add(item)}
+                                               data={item}/>
                                 </Col>
-
                             )
                         })
                     }

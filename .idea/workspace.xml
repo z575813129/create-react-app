@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2391fda5-37da-42cb-8c7c-9354e4c7ca7d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-order/src/components/OrderItem/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-order/src/components/OrderItem/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-order/src/components/OrderList/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-order/src/components/OrderList/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-order/src/pages/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-order/src/pages/Home/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,16 +39,18 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="node.js.path.for.package.jscs" value="project" />
     <property name="node.js.detected.package.jscs" value="true" />
+    <property name="node.js.path.for.package.jscs" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.jscs" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -123,5 +128,45 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1889" height="169" key="GridCell.Tab.0.bottom" timestamp="1595403035769">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1889" height="169" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595403035769" />
+    <state width="1889" height="169" key="GridCell.Tab.0.center" timestamp="1595403035769">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1889" height="169" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595403035769" />
+    <state width="1889" height="169" key="GridCell.Tab.0.left" timestamp="1595403035769">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1889" height="169" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595403035769" />
+    <state width="1889" height="169" key="GridCell.Tab.0.right" timestamp="1595403035769">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1889" height="169" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595403035769" />
+    <state x="453" y="-2" width="1009" height="1470" key="search.everywhere.popup" timestamp="1595313929882">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="453" y="-2" width="1009" height="1470" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595313929882" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/my-order/src/pages/Home/index.js</url>
+          <line>105</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/react-init/src/components/RouterSample.js</url>
+          <line>74</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
