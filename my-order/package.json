@@ -9,7 +9,7 @@
     "eject": "react-app-rewired eject"
   },
   "dependencies": {
-    "antd": "^4.4.2",
+    "antd": "^4.4.3",
     "babel-plugin-import": "^1.13.0",
     "customize-cra": "^1.0.0",
     "react": "^16.13.1",
@@ -18,7 +18,7 @@
     "react-router": "^5.2.0",
     "react-router-config": "^5.1.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^3.0.0"
+    "react-scripts": "^3.4.1"
   },
   "eslintConfig": {
     "extends": "react-app"
