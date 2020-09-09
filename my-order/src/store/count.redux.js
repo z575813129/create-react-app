@@ -2,10 +2,10 @@
 export const add = () => ({type: "add"})
 export const minus = () => ({type: "minus"})
 export const asyncAdd = () => dispatch => {
-    // 异步操作
-    setTimeout(() => {
-        dispatch({type: "add"})
-    }, 2000)
+  // 异步操作
+  setTimeout(() => {
+    dispatch({type: "add"})
+  }, 2000)
 }
 
 export const counterReducer = (state = 0, action) => {
